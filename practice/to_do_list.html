@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To do list</title>
+ 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+
+    <style>
+        .search-box {
+            padding: 13px 130px 13px 12px;
+            margin-right: -1px;
+        }
+
+        .search-box::placeholder {
+            font-size: medium;
+        }
+
+        button {
+            padding: 7px 13px 7px 12px;
+            font-size: 25px;
+            margin-left: -1px;
+        }
+
+        .taskbar {
+            display: flex;
+            align-items: center;
+        }
+
+        .task {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="taskbar">
+        <input id="taskInput" class="search-box"
+               type="text" placeholder="Add new task">
+
+        <button onclick="taskbox()">+</button>
+    </div>
+
+    <div id="today-Task"></div>
+
+    <script>
+        
+        function taskbox() {
+        const task = document.getElementById('taskInput').value;
+
+        document.getElementById("today-Task").innerHTML += '<input type="checkbox"> ' + task + '<br>';
+
+        document.getElementById('taskInput').value = "";
+    }
+    </script>
+</body>
+</html>
+
+    
+</body>
+</html>
+
+
+
